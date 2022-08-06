@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+body{
+    margin:0;
+    padding: 0;
+    font-family:montserrat;
+    background: linear-gradient(120deg,rgb(114, 80, 236),#b535b9);
+    height:100vh;
+    overflow: hidden;
+}
+table,th,td{
+    color: #1b071b;
+    background-color: rgb(133, 84, 239);
+    border-radius: 2px;
+    width: 95%;
+    align-items: center;
+    border: 3px solid;
+    border-color: rgb(216, 195, 218);
+}
