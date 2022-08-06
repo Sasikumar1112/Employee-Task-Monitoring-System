@@ -91,12 +91,12 @@ public class CreateTask extends HttpServlet {
 	}
 	static void SMS(String msg,String by) {
 		  // Find your Account Sid and Token at twilio.com/console 
-	    final String ACCOUNT_SID = "ACb118528ae00838c736b006cdee619264"; 
-	    final String AUTH_TOKEN = "670f04bd272db448384f39fa6866a81e"; 
+	    final String ACCOUNT_SID = "XXXXX"; 
+	    final String AUTH_TOKEN = "XXXX"; 
 	 
 	        Twilio.init(ACCOUNT_SID, AUTH_TOKEN); 
 	        Message message = Message.creator(
-	                new com.twilio.type.PhoneNumber("+917904570101"), new com.twilio.type.PhoneNumber("+19107883387"),
+	                new com.twilio.type.PhoneNumber("YYYY"), new com.twilio.type.PhoneNumber("YYYY"),
 	                "\nNew Task has been Assigned \n Task Name: "+msg+"\n Assigned by: "+by)      
 	            .create(); 
 	        System.out.println(message.getSid()); 
